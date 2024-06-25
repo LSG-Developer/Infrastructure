@@ -8,7 +8,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace CompanyName.ProjectName.ServiceName.Dto
 {
-    
+
     public enum ReportProjectDtoStates
     {
         [EnumMemberAttribute]
@@ -26,24 +26,25 @@ namespace CompanyName.ProjectName.ServiceName.Dto
         [EnumMemberAttribute]
         Closed = 6
     }
-        [ExcludeFromCodeCoverage]
-        public class YourDto : DtoBase
+    [ExcludeFromCodeCoverage]
+    public class YourDto : DtoBase
     {
-            private string name;
-            public string Name
+        private string name;
+  
+        public string Name
+        {
+            get { return name; }
+            set
             {
-                get { return name; }
-                set
-                {
-                    name = value;
-                    //base.NotifyPropertyChanged("Name");
-                }
+                name = value;
+                base.NotifyPropertyChanged("Name");
             }
-            public int Temperatura { get; set; }
-            public int Umidità { get; set; }
-            public int MovimentoTellurico { get; set; }
-            public int CoordinateTerrestri { get; set; }
         }
+        public int Temperatura { get; set; }
+        public int Umidità { get; set; }
+        public int MovimentoTellurico { get; set; }
+        public int CoordinateTerrestri { get; set; }
+    }
 
 
 

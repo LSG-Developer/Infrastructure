@@ -2,7 +2,7 @@
 
 namespace LSG.Infrastructure.Framework.BaseClasses
 {
-    public abstract class DtoBase : INotifyPropertyChanged
+    public abstract class DtoBase //: INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void NotifyPropertyChanged(string property)
