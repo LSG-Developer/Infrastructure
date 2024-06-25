@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSG.Infrastructure.Framewor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSG.Infrastructure.Framework.Consumer", "Framework\Consumer\LSG.Infrastructure.Framework.Consumer.csproj", "{9128FD3D-8EFB-444E-B50D-BDB26DA13936}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.ProjectName.ServiceName", "ServiceBase\ServiceName\CompanyName.ProjectName.ServiceName.csproj", "{7D83D02B-2C75-47D4-9B0A-F577ABA56578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.ProjectName.ServiceName.Consumer", "ServiceBase\Consumer\CompanyName.ProjectName.ServiceName.Consumer.csproj", "{C6347489-EF99-43D8-AFFC-096E3672AD67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9128FD3D-8EFB-444E-B50D-BDB26DA13936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9128FD3D-8EFB-444E-B50D-BDB26DA13936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9128FD3D-8EFB-444E-B50D-BDB26DA13936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D83D02B-2C75-47D4-9B0A-F577ABA56578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D83D02B-2C75-47D4-9B0A-F577ABA56578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D83D02B-2C75-47D4-9B0A-F577ABA56578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D83D02B-2C75-47D4-9B0A-F577ABA56578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6347489-EF99-43D8-AFFC-096E3672AD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6347489-EF99-43D8-AFFC-096E3672AD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6347489-EF99-43D8-AFFC-096E3672AD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6347489-EF99-43D8-AFFC-096E3672AD67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,3 +6,7 @@ Consumer/.vs/
 .vs/
 Framework/Consumer/obj/
 Framework/Consumer/bin/
+ServiceBase/Consumer/bin/
+ServiceBase/Consumer/obj/
+ServiceBase/ServiceName/obj/
+ServiceBase/Test/obj/
