@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <components>
-    <component id="myService"
-               service="LSG.Infrastructure.Framework.Consumerv.IMyService, Framework.Consumer"
-               type="LSG.Infrastructure.Framework.Consumer.MyService, Framework.Consumer" />
-  </components>
-</configuration>

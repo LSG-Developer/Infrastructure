@@ -22,6 +22,10 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
 
             YourService s = new YourService();
             var a = s.GetMessage(messageRequest);
+
+
+            Console.WriteLine("end of program!!");
+            Console.ReadLine();
         }
 
         private static void Dto_PropertyChanged(object sender, PropertyChangedEventArgs e)
