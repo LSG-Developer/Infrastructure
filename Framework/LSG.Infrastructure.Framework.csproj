@@ -51,8 +51,6 @@
     <Compile Include="Framework\Factory\CastleWinsorFactory.cs" />
     <Compile Include="Framework\Interfaces\IRepository.cs" />
     <Compile Include="Framework\Interfaces\IService.cs" />
-    <Compile Include="Framework\MessageRequest.cs" />
-    <Compile Include="Framework\MessageResponse.cs" />
     <Compile Include="Framework\Utils\CloneObjects.cs" />
     <Compile Include="Framework\Utils\IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

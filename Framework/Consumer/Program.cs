@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LSG.Infrastructure.Framework.BaseClasses;
 
-namespace Consumer
+namespace LSG.Infrastructure.Framework.Consumer
 {
     internal class Program
     {

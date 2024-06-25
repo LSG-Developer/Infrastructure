@@ -3,9 +3,7 @@ using System.Reflection;
 
 namespace LSG.Infrastructure.Framework.BaseClasses.MessageTransfert
 {
-        /// <summary>
-        /// Enumeration dei messaggi di avviso della response.
-        /// </summary>
+
         public enum AcknowledgeType
         {
             Failure = 0,
@@ -13,9 +11,6 @@ namespace LSG.Infrastructure.Framework.BaseClasses.MessageTransfert
             Warning = 2
         }
 
-        /// <summary>
-        /// Classe base per tutte le response ai client che utilizzano i web service di Vittoria Assicurazioni.
-        /// </summary>
         public abstract class MessageResponseBase
         {
             AcknowledgeType _acknowledgeType = AcknowledgeType.Success;

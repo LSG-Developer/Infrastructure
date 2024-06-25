@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9128FD3D-8EFB-444E-B50D-BDB26DA13936}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Consumer</RootNamespace>
-    <AssemblyName>Consumer</AssemblyName>
+    <RootNamespace>LSG.Infrastructure.Framework.Consumer</RootNamespace>
+    <AssemblyName>Framework.Consumer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,7 +53,7 @@
     <Content Include="components.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Framework\LSG.Infrastructure.Framework.csproj">
+    <ProjectReference Include="..\LSG.Infrastructure.Framework.csproj">
       <Project>{6bbcb236-644d-49ec-bfe1-80a0c03d0a71}</Project>
       <Name>LSG.Infrastructure.Framework</Name>
     </ProjectReference>

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSG.Infrastructure.Framework", "Framework\LSG.Infrastructure.Framework.csproj", "{6BBCB236-644D-49EC-BFE1-80A0C03D0A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{9128FD3D-8EFB-444E-B50D-BDB26DA13936}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSG.Infrastructure.Framework.Consumer", "Framework\Consumer\LSG.Infrastructure.Framework.Consumer.csproj", "{9128FD3D-8EFB-444E-B50D-BDB26DA13936}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
