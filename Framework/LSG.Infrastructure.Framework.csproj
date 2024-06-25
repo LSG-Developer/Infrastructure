@@ -7,8 +7,8 @@
     <ProjectGuid>{6BBCB236-644D-49EC-BFE1-80A0C03D0A71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>LSG.Infrastructure.Framework</RootNamespace>
+    <AssemblyName>Infrastructure.Framework</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

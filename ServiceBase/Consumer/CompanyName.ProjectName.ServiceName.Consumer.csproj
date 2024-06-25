@@ -7,8 +7,8 @@
     <ProjectGuid>{C6347489-EF99-43D8-AFFC-096E3672AD67}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplicationTest2</RootNamespace>
-    <AssemblyName>ConsoleApplicationTest2</AssemblyName>
+    <RootNamespace>CompanyName.ProjectName.ServiceName.Consumer</RootNamespace>
+    <AssemblyName>ServiceName.Consumer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
