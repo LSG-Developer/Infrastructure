@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NMock2;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Test
+namespace CompanyName.ProjectName.ServiceName.Test
 {
     [TestClass]
     public class UnitTest1 

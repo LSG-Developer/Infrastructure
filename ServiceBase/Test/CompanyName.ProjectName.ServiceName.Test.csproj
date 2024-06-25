@@ -64,13 +64,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\Framework\LSG.Infrastructure.Framework.csproj">
+    <ProjectReference Include="..\..\Framework\LSG.Infrastructure.Framework.csproj">
       <Project>{6bbcb236-644d-49ec-bfe1-80a0c03d0a71}</Project>
       <Name>LSG.Infrastructure.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\ServiceName\CompanyName.ProjectName.ServiceName.csproj">
       <Project>{7d83d02b-2c75-47d4-9b0a-f577aba56578}</Project>
-      <Name>Service</Name>
+      <Name>CompanyName.ProjectName.ServiceName</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -12,29 +12,28 @@ namespace LSG.Infrastructure.Framework.Consumer
     {
         static void Main(string[] args)
         {
-            qwer f = new qwer();
-            f.qwe();
+            MyService myService = new MyService();
+            myService.ServiceMethode();
         }
     }
 
-    public class qwer : ServiceBase
+    public class MyService : ServiceBase
     {
-        public void qwe()
+        public void ServiceMethode()
         {
-            IMyService ii = base.CastleFactory<IMyService>();
-            ii.DoSomething();
+            IMyRepository repo = base.CastleFactory<IMyRepository>();
+            repo.do_something();
         }
     }
 
-
-    public interface IMyService
+    public interface IMyRepository
     {
-        void DoSomething();
+        void do_something();
     }
 
-    public class MyService : IMyService
+    public class MyRepository : IMyRepository
     {
-        public void DoSomething()
+        public void do_something()
         {
             Console.WriteLine("Castle Windsor 1");
             Console.ReadLine();
