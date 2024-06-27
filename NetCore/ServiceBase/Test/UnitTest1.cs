@@ -1,14 +1,14 @@
 ﻿using System;
 using CompanyName.ProjectName.ServiceName.BackServices;
 using CompanyName.ProjectName.ServiceName.Repository;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics.CodeAnalysis;
-using Moq;
+using Moq; 
 
 namespace CompanyName.ProjectName.ServiceName.Test
 {
     [TestClass]
-    public class UnitTest1 
+    [ExcludeFromCodeCoverage]
+    public class UnitTest1
     {
         /// <summary>
         ///A test for IsSurricaldamentoInAumento

@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.ProjectName.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.ProjectName.ServiceName.Consumer", "NetCore\ServiceBase\Consumer\CompanyName.ProjectName.ServiceName.Consumer.csproj", "{102733EC-DFC5-4C7D-8F31-2E938601F858}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.ProjectName.ServiceName.Test", "NetCore\ServiceBase\Test\CompanyName.ProjectName.ServiceName.Test.csproj", "{796BE438-F592-44CF-80BC-6E0DD286BE09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{102733EC-DFC5-4C7D-8F31-2E938601F858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{102733EC-DFC5-4C7D-8F31-2E938601F858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{102733EC-DFC5-4C7D-8F31-2E938601F858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796BE438-F592-44CF-80BC-6E0DD286BE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796BE438-F592-44CF-80BC-6E0DD286BE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796BE438-F592-44CF-80BC-6E0DD286BE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796BE438-F592-44CF-80BC-6E0DD286BE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{43405F91-D9DC-4304-8AB9-7A56C9ED1D73} = {0A9A9E55-F622-4FCC-847A-2547BFAAEB50}
 		{04DC09EE-1418-4C72-876F-E9FED795DF2F} = {43405F91-D9DC-4304-8AB9-7A56C9ED1D73}
 		{102733EC-DFC5-4C7D-8F31-2E938601F858} = {43405F91-D9DC-4304-8AB9-7A56C9ED1D73}
+		{796BE438-F592-44CF-80BC-6E0DD286BE09} = {43405F91-D9DC-4304-8AB9-7A56C9ED1D73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B543109D-0F44-4FF3-96AD-303DEB439B2A}

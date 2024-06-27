@@ -26,3 +26,5 @@ NetCore/Framework/Consumer/bin/
 NetCore/Framework/obj/
 NetCore/ServiceBase/ServiceName/bin/
 NetCore/Framework/bin/
+NetCore/ServiceBase/Test/obj/
+NetCore/ServiceBase/Test/bin/
