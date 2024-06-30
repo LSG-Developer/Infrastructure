@@ -26,24 +26,36 @@ namespace CompanyName.ProjectName.ServiceName.Dto
         [EnumMemberAttribute]
         Closed = 6
     }
+    
     [ExcludeFromCodeCoverage]
     public class YourDto : DtoBase
     {
-        private string name;
-  
-        public string Name
+        private  string? _name;
+
+        private string? _surname;
+
+        public string? Name
         {
-            get { return name; }
-            set
-            {
-                name = value;
+            get { return _name; }
+    
+            set{
+                _name = value;
                 base.NotifyPropertyChanged("Name");
             }
         }
-        public int Temperatura { get; set; }
-        public int Umidità { get; set; }
-        public int MovimentoTellurico { get; set; }
-        public int CoordinateTerrestri { get; set; }
+
+
+        public string? SurName
+        {
+            get { return _surname; }
+
+            set
+            {
+                _surname = value;
+                base.NotifyPropertyChanged("SurName");
+            }
+        }
+
     }
 
 

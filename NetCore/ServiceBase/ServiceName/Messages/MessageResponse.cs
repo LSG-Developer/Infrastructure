@@ -10,7 +10,7 @@ namespace CompanyName.ProjectName.ServiceName.MessageTransfert
 {
         public class MessageResponse<T> : MessageResponseBase
         {
-            public List<T> ListOfEntity {get;set;}
-            public T Entity { get; set; }
+            public List<T>? ListOfEntity {get;set;}
+            public T? Entity { get; set; }
         }
 }

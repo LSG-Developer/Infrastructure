@@ -15,16 +15,21 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
         static void Main(string[] args)
         {
             MessageRequest<YourDto> messageRequest = new MessageRequest<YourDto>();
+
             messageRequest.Entity = new YourDto() { Name = "Nome", Temperatura = 10 };
+
             messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
+
             messageRequest.Entity.Name = "aaaa";
 
 
             YourService s = new YourService();
+
             var a = s.GetMessage(messageRequest);
 
 
             Console.WriteLine("end of program!!");
+
             Console.ReadLine();
         }
 

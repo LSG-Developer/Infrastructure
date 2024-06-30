@@ -15,7 +15,7 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
         static void Main(string[] args)
         {
             MessageRequest<YourDto> messageRequest = new MessageRequest<YourDto>();
-            messageRequest.Entity = new YourDto() { Name = "Nome", Temperatura = 10 };
+            messageRequest.Entity = new YourDto() { Name = "Nome", SurName="Santagada" };
             messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
             messageRequest.Entity.Name = "aaaa";
 
