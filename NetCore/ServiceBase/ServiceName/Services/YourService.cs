@@ -10,11 +10,16 @@ namespace CompanyName.ProjectName.Services
 {
     public class YourService : ServiceBase
     {
+
+
+
+
         [ExcludeFromCodeCoverage]  
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)  
         {
             using (IYourRepository repository = base.CastleFactory<IYourRepository>())
             { 
+            
                 string message = BackServiceName.MethodName(repository);
                 MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>();   
                 messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 

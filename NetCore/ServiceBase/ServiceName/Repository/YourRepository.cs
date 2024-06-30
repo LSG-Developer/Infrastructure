@@ -7,6 +7,11 @@ namespace CompanyName.ProjectName.ServiceName.Repository
     [ExcludeFromCodeCoverage]
     public class YourRepository :  IYourRepository
     {
+        public YourRepository() 
+        {
+
+        }
+
         public void Dispose()
         {
             //throw new NotImplementedException();
@@ -14,11 +19,6 @@ namespace CompanyName.ProjectName.ServiceName.Repository
 
         public string GetMessage()
         {
-            //string stringConnection = "Server=localhost;Database=TestDb;User Id=sqlaccess;Password=sqlaccess;";
-            //SqlConnection conn = new SqlConnection(stringConnection);
-            //SqlCommand command = new SqlCommand("INSERT INTO Tabella ([Campo]) VALUES ('USA');", conn);
-            //conn.Open();
-            //command.ExecuteScalar();
             return "Hello from database";
         }
 

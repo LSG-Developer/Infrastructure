@@ -7,6 +7,7 @@ namespace CompanyName.ProjectName.ServiceName.Contracts
     public interface IServiceContract
     {
         MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest);
+        string GetMessage();
     }
 
 }
