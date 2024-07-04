@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <components>
-    <component id="myService"
+    <component id="myRepository"
                service="CompanyName.ProjectName.ServiceName.Repository.IYourRepository, CompanyName.ProjectName.ServiceName"
-               type="CompanyName.ProjectName.ServiceName.Repository.YourRepositoryStub, CompanyName.ProjectName.ServiceName" />
+               type="CompanyName.ProjectName.ServiceName.Repository.YourRepository, CompanyName.ProjectName.ServiceName" />
+
+    <component id="dbConnection"
+               service="System.Data.IDbConnection, System.Data"
+               type="System.Data.SqlClient.SqlConnection, System.Data" />
   </components>
 </configuration>
