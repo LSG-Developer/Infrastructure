@@ -3,10 +3,11 @@ using System.Diagnostics.CodeAnalysis;
 using System.Data;
 using System.Data.Common;
 using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Infrastructure.Framework.Interfaces;
 
 namespace CompanyName.ProjectName.ServiceName.Repository.Base
 {
-    public abstract class BaseDbRepository : ServiceBase,IDisposable 
+    public abstract class BaseDbRepository : ServiceBase,IRepository 
     {
         protected internal IDbConnection? _connection;
 
@@ -18,6 +19,12 @@ namespace CompanyName.ProjectName.ServiceName.Repository.Base
         {
             _connection = connection;
             _connection.ConnectionString = connectionString;
+        }
+
+
+        public void SetGuid(Guid id)
+        {
+            throw new NotImplementedException();
         }
 
         public void Dispose() {

@@ -16,10 +16,5 @@ namespace CompanyName.ProjectName.ServiceName.Repository
         {
             return "Hello";
         }
-
-        public void SetGuid(Guid id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
