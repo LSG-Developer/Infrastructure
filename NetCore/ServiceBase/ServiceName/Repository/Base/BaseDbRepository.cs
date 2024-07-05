@@ -6,11 +6,11 @@ using LSG.Infrastructure.Framework.BaseClasses;
 
 namespace CompanyName.ProjectName.ServiceName.Repository.Base
 {
-    public abstract class BaseRepository : ServiceBase,IDisposable 
+    public abstract class BaseDbRepository : ServiceBase,IDisposable 
     {
         protected internal IDbConnection? _connection;
 
-        protected internal BaseRepository(){
+        protected internal BaseDbRepository(){
             }
         private bool disposed = false;
 
@@ -25,7 +25,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.Base
             GC.SuppressFinalize(this);
         }
 
-        ~BaseRepository(){
+        ~BaseDbRepository(){
             Dispose();
         }
 

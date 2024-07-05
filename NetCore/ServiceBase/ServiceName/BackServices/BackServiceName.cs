@@ -10,7 +10,7 @@ namespace CompanyName.ProjectName.ServiceName.BackServices
 {
     public class BackServiceName : ServiceBase
     {
-        public static string MethodName(IYourRepository repository)
+        public static string MethodName(Your_IDbRepository repository)
         {
             //throw new ArgumentException("Attenzione:il messaggio è vuoto");
             string message = repository.GetMessage();

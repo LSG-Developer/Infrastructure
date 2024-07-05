@@ -10,12 +10,12 @@ using System.Data;
 
 namespace CompanyName.ProjectName.Services
 {
-    public class YourService : ServiceBase
+    public class Your_Service : ServiceBase
     {
         [ExcludeFromCodeCoverage]  
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)  
         {
-            using (IYourRepository repository = base.CastleFactory<IYourRepository>())
+            using (Your_IDbRepository repository = base.CastleFactory<Your_IDbRepository>())
             using (IDbConnection dbConnection = base.CastleFactory<IDbConnection>())
             { 
                 string message = BackServiceName.MethodName(repository);

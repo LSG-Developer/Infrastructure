@@ -14,7 +14,7 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
         [HttpPost("GetMessage")]
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)
         {
-            YourService yourService = new YourService();
+            Your_Service yourService = new Your_Service();
             return yourService.GetMessage(messageRequest);
         }
 
@@ -22,7 +22,7 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
         [HttpGet("GetMessage")]
         public string GetMessage()
         {
-            YourService yourService = new YourService();
+            Your_Service yourService = new Your_Service();
             return yourService.GetMessage();
         }
 

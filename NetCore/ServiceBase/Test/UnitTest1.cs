@@ -17,7 +17,7 @@ namespace CompanyName.ProjectName.ServiceName.Test
         [ExcludeFromCodeCoverage]
         public void IsMessageCorrect()
         {
-            var mockService = new Mock<IYourRepository>();
+            var mockService = new Mock<Your_IDbRepository>();
 
             String[] listStringa = new String[3] { "Hello Word", "Hello word", "hello Word" };
 

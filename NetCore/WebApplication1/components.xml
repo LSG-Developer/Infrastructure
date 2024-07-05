@@ -2,8 +2,8 @@
 <configuration>
   <components>
     <component id="myRepository"
-               service="CompanyName.ProjectName.ServiceName.Repository.IYourRepository, CompanyName.ProjectName.ServiceName"
-               type="CompanyName.ProjectName.ServiceName.Repository.YourRepository, CompanyName.ProjectName.ServiceName" />
+               service="CompanyName.ProjectName.ServiceName.Repository.Your_IDbRepository, CompanyName.ProjectName.ServiceName"
+               type="CompanyName.ProjectName.ServiceName.Repository.Your_DbRepository, CompanyName.ProjectName.ServiceName" />
 
     <component id="dbConnection"
                service="System.Data.IDbConnection, System.Data"

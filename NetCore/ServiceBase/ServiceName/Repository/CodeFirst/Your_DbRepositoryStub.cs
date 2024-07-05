@@ -8,7 +8,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace CompanyName.ProjectName.ServiceName.Repository
 {
     [ExcludeFromCodeCoverage]
-    public class YourRepositoryStub : IYourRepository
+    public class Your_DbRepositoryStub : Your_IDbRepository
     {
         private bool disposedValue;
 
@@ -22,7 +22,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository
             throw new NotImplementedException();
         }
 
-        protected virtual void Dispose(bool disposing)
+        public void Dispose(bool disposing)
         {
             if (!disposedValue)
             {

@@ -7,9 +7,9 @@ using System.Diagnostics.CodeAnalysis;
 namespace CompanyName.ProjectName.ServiceName.Repository
 {
     [ExcludeFromCodeCoverage]
-    public class YourRepository : BaseRepository, IYourRepository
+    public class Your_DbRepository : BaseDbRepository, Your_IDbRepository
     {
-        public YourRepository() : base(){
+        public Your_DbRepository() : base(){
 
         }
         public string GetMessage()

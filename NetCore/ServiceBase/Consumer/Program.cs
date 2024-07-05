@@ -20,7 +20,7 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
             messageRequest.Entity.Name = "aaaa";
 
 
-            YourService s = new YourService();
+            Your_Service s = new Your_Service();
             var a = s.GetMessage(messageRequest);
 
 
