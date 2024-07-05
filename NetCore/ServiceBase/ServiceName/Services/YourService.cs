@@ -4,7 +4,9 @@ using CompanyName.ProjectName.ServiceName.Repository;
 using LSG.Infrastructure.Framework.BaseClasses;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using System.Diagnostics.CodeAnalysis;
- 
+using System.Data;
+
+
 
 namespace CompanyName.ProjectName.Services
 {
@@ -14,8 +16,8 @@ namespace CompanyName.ProjectName.Services
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)  
         {
             using (IYourRepository repository = base.CastleFactory<IYourRepository>())
+            using (IDbConnection dbConnection = base.CastleFactory<IDbConnection>())
             { 
-                
                 string message = BackServiceName.MethodName(repository);
                 MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>();   
                 messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 

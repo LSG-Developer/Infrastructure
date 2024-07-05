@@ -1,7 +1,6 @@
 ﻿
 using LSG.Infrastructure.Framework.Factory;
 
-
 namespace LSG.Infrastructure.Framework.BaseClasses
 {
     public abstract class ServiceBase 

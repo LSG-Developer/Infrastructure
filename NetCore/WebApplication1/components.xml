@@ -8,5 +8,6 @@
     <component id="dbConnection"
                service="System.Data.IDbConnection, System.Data"
                type="System.Data.SqlClient.SqlConnection, System.Data" />
+    
   </components>
 </configuration>

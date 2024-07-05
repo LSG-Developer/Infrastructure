@@ -12,15 +12,9 @@ namespace CompanyName.ProjectName.ServiceName.Repository
         public YourRepository() : base(){
 
         }
-
-        public new void Dispose()
-        {
-            base.Dispose();
-        }
-
         public string GetMessage()
         {
-            return base.MessageTest();
+            return "Hello";
         }
 
         public void SetGuid(Guid id)

@@ -2,26 +2,33 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Data;
 using System.Data.Common;
+using LSG.Infrastructure.Framework.BaseClasses;
 
 namespace CompanyName.ProjectName.ServiceName.Repository.Base
 {
-    public abstract class BaseRepository
+    public abstract class BaseRepository : ServiceBase,IDisposable 
     {
-        protected internal IDbConnection _connection;
+        protected internal IDbConnection? _connection;
 
         protected internal BaseRepository(){
-            //_connection.ConnectionString = connection_string;
-            //_connection.Open();
+            }
+        private bool disposed = false;
+
+        protected internal void InitConnection(IDbConnection connection,string connectionString)
+        {
+            _connection = connection;
+            _connection.ConnectionString = connectionString;
         }
 
-        protected internal void Dispose()
-        {
-            //_connection.Close();
+        public void Dispose() {
+            _connection.Close();
+            GC.SuppressFinalize(this);
         }
 
-        protected internal string MessageTest()
-        {
-            return "Hello from Web";
+        ~BaseRepository(){
+            Dispose();
         }
+
+
     }
 }
