@@ -2,10 +2,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Data;
 using System.Data.Common;
-using LSG.Infrastructure.Framework.BaseClasses;
 using LSG.Infrastructure.Framework.Interfaces;
 
-namespace CompanyName.ProjectName.ServiceName.Repository.Base
+namespace LSG.Infrastructure.Framework.BaseClasses
 {
     public abstract class BaseDbRepository : ServiceBase,IRepository 
     {
@@ -28,7 +27,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.Base
         }
 
         public void Dispose() {
-            _connection.Close();
+            //_connection.Close();
             GC.SuppressFinalize(this);
         }
 

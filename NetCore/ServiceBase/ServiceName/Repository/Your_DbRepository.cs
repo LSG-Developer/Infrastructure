@@ -1,7 +1,4 @@
-﻿using CompanyName.ProjectName.ServiceName.Repository.Base;
-using System;
-using System.Data;
-using System.Data.SqlClient;
+﻿using LSG.Infrastructure.Framework.BaseClasses;
 using System.Diagnostics.CodeAnalysis;
 
 namespace CompanyName.ProjectName.ServiceName.Repository
