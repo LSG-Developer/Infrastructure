@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using LSG.Infrastructure.Framework.BaseClasses;
 using System.Diagnostics.CodeAnalysis;
+using System.Data;
 
 namespace CompanyName.ProjectName.ServiceName.Repository
 {
@@ -49,6 +50,11 @@ namespace CompanyName.ProjectName.ServiceName.Repository
             // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
+        }
+
+        public void Init(IDbConnection connection, string connectionString)
+        {
+            throw new NotImplementedException();
         }
     }
 }

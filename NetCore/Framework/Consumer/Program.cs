@@ -21,7 +21,7 @@ namespace LSG.Infrastructure.Framework.Consumer
     {
         public void ServiceMethode()
         {
-            IMyRepository repo = base.CastleFactory<IMyRepository>();
+            IMyRepository repo = CastleFactory<IMyRepository>("components.xml");
             repo.do_something();
         }
     }

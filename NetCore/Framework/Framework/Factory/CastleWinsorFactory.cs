@@ -8,11 +8,11 @@ namespace LSG.Infrastructure.Framework.Factory
 {
     internal class CastleWinsorFactory<T> 
     {
-        public static T Create()
+        public static T Create(string castle_file_name)
         {
             try
             {
-                string configFilePath = Path.Combine(Directory.GetCurrentDirectory(), "components.xml");
+                string configFilePath = Path.Combine(Directory.GetCurrentDirectory(), castle_file_name);
 
                 IWindsorContainer container = new WindsorContainer(new XmlInterpreter(configFilePath));
 

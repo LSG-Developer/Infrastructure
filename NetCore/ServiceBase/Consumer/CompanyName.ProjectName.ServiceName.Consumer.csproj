@@ -11,10 +11,4 @@
     <ProjectReference Include="..\ServiceName\CompanyName.ProjectName.ServiceName.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="components.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

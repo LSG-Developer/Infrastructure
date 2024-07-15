@@ -3,21 +3,27 @@ using System.Diagnostics.CodeAnalysis;
 using System.Data;
 using System.Data.Common;
 using LSG.Infrastructure.Framework.Interfaces;
+using System.Xml.Linq;
 
 namespace LSG.Infrastructure.Framework.BaseClasses
 {
-    public abstract class BaseDbRepository : ServiceBase,IRepository 
+    public abstract class BaseDbRepository : ServiceBase, IRepository
     {
         protected internal IDbConnection? _connection;
 
-        protected internal BaseDbRepository(){
-            }
-        private bool disposed = false;
+        protected internal BaseDbRepository()
+        {
+        }
 
-        protected internal void InitConnection(IDbConnection connection,string connectionString)
+        public void InitConnection(IDbConnection connection, string connectionString)
         {
             _connection = connection;
             _connection.ConnectionString = connectionString;
+        }
+
+        public void OpenConnection()
+        {
+            _connection.Open();
         }
 
 
@@ -26,12 +32,14 @@ namespace LSG.Infrastructure.Framework.BaseClasses
             throw new NotImplementedException();
         }
 
-        public void Dispose() {
+        public void Dispose()
+        {
             //_connection.Close();
             GC.SuppressFinalize(this);
         }
 
-        ~BaseDbRepository(){
+        ~BaseDbRepository()
+        {
             Dispose();
         }
 

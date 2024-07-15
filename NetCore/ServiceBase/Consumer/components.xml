@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <components>
-    <component id="myService"
-               service="CompanyName.ProjectName.ServiceName.Repository.IYourRepository, CompanyName.ProjectName.ServiceName"
-               type="CompanyName.ProjectName.ServiceName.Repository.YourRepositoryStub, CompanyName.ProjectName.ServiceName" />
-  </components>
-</configuration>
