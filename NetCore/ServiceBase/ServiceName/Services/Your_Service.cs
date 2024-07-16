@@ -16,9 +16,7 @@ namespace CompanyName.ProjectName.Services
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)  
         {
             using (Your_IDbRepository repository = CastleFactory<Your_IDbRepository>("components.xml"))
-            using (IDbConnection dbConnection = CastleFactory<IDbConnection>("components.xml"))
             {
-               // repository.Init(dbConnection, "string:connection");
                 string message = BackServiceName.MethodName(repository);
                 MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>();   
                 messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 

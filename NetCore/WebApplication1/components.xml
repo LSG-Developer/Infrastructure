@@ -3,11 +3,15 @@
   <components>
     <component id="myRepository"
                service="CompanyName.ProjectName.ServiceName.Repository.Your_IDbRepository, CompanyName.ProjectName.ServiceName"
-               type="CompanyName.ProjectName.ServiceName.Repository.Your_DbRepository, CompanyName.ProjectName.ServiceName" />
+               type="CompanyName.ProjectName.ServiceName.Repository.Your_DbRepository, CompanyName.ProjectName.ServiceName">
+      <parameters>
+        <connectionString>stringa di connessione</connectionString>
+        <dbConnection>${dbConnection}</dbConnection>
+      </parameters>
+    </component>
 
     <component id="dbConnection"
                service="System.Data.IDbConnection, System.Data"
                type="System.Data.SqlClient.SqlConnection, System.Data" />
-    
   </components>
 </configuration>

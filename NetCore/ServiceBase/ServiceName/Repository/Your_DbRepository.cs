@@ -7,13 +7,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository
     [ExcludeFromCodeCoverage]
     public class Your_DbRepository : BaseDbRepository, Your_IDbRepository
     {
-        public Your_DbRepository() : base(){
-        }
-
-        public new void Init(IDbConnection conn, string connectionString)
-        {
-            base.InitConnection(conn, connectionString);
-            base.OpenConnection();
+        public Your_DbRepository(IDbConnection conn, string connectionString) : base(conn, connectionString){
         }
 
         public string GetMessage()

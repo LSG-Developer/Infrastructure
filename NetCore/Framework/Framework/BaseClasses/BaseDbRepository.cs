@@ -11,21 +11,17 @@ namespace LSG.Infrastructure.Framework.BaseClasses
     {
         protected internal IDbConnection? _connection;
 
-        protected internal BaseDbRepository()
-        {
-        }
-
-        public void InitConnection(IDbConnection connection, string connectionString)
+        protected internal BaseDbRepository(IDbConnection connection, string connectionString)
         {
             _connection = connection;
             _connection.ConnectionString = connectionString;
+
         }
 
         public void OpenConnection()
         {
             _connection.Open();
         }
-
 
         public void SetGuid(Guid id)
         {
@@ -34,7 +30,7 @@ namespace LSG.Infrastructure.Framework.BaseClasses
 
         public void Dispose()
         {
-            //_connection.Close();
+            _connection.Close();
             GC.SuppressFinalize(this);
         }
 
