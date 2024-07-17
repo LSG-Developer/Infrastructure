@@ -15,7 +15,6 @@ namespace LSG.Infrastructure.Framework.BaseClasses
         {
             _connection = connection;
             _connection.ConnectionString = connectionString;
-
         }
 
         public void OpenConnection()
