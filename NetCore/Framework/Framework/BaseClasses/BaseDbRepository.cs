@@ -1,13 +1,11 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿
 using System.Data;
-using System.Data.Common;
 using LSG.Infrastructure.Framework.Interfaces;
-using System.Xml.Linq;
+
 
 namespace LSG.Infrastructure.Framework.BaseClasses
 {
-    public abstract class BaseDbRepository : ServiceBase, IRepository
+    public abstract class BaseDbRepository : IRepository
     {
         protected internal IDbConnection? _connection;
 
