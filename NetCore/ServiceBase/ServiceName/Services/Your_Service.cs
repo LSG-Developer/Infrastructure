@@ -1,11 +1,10 @@
 ﻿using CompanyName.ProjectName.ServiceName.BackServices;
 using CompanyName.ProjectName.ServiceName.Dto;
-using CompanyName.ProjectName.ServiceName.Repository;
 using LSG.Infrastructure.Framework.BaseClasses;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using System.Diagnostics.CodeAnalysis;
-using System.Data;
-
+using CompanyName.ProjectName.ServiceName.Repository.DbSql;
+using CompanyName.ProjectName.ServiceName.Repository.DbContext;
 
 
 namespace CompanyName.ProjectName.Services
@@ -17,6 +16,7 @@ namespace CompanyName.ProjectName.Services
         {
             using (Your_IDbRepository repository = CastleFactory<Your_IDbRepository>("components.xml"))
             {
+                repository.get_person_name();
                 string message = BackServiceName.MethodName(repository);
                 MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>();   
                 messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 
@@ -25,10 +25,14 @@ namespace CompanyName.ProjectName.Services
             }
         }
 
-
         public string GetMessage()
         {
             return "Hello word!!!";
+        }
+
+        public void TestContextRepository()
+        {
+            IAppDbContextRepository context = CastleFactory<IAppDbContextRepository>("components.xml");
         }
     }
 }

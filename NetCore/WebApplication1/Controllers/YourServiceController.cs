@@ -26,6 +26,13 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
             return yourService.GetMessage();
         }
 
+
+        [HttpGet("TestContextRepository")]
+        public void TestContextRepository()
+        {
+            Your_Service yourService = new Your_Service();
+        }
+
         //private static readonly string[] Summaries = new[]
         //{
         //    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

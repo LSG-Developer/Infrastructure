@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CompanyName.ProjectName.ServiceName.Repository;
+using CompanyName.ProjectName.ServiceName.Repository.DbSql;
 using LSG.Infrastructure.Framework.BaseClasses;
 
 

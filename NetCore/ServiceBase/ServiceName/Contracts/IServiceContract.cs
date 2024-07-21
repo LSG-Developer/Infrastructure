@@ -8,6 +8,7 @@ namespace CompanyName.ProjectName.ServiceName.Contracts
     {
         MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest);
         string GetMessage();
+        public void TestContextRepository();
     }
 
 }

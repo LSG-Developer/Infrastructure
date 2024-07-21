@@ -6,7 +6,7 @@ using LSG.Infrastructure.Framework.BaseClasses;
 using System.Diagnostics.CodeAnalysis;
 using System.Data;
 
-namespace CompanyName.ProjectName.ServiceName.Repository
+namespace CompanyName.ProjectName.ServiceName.Repository.DbSql
 {
     [ExcludeFromCodeCoverage]
     public class Your_DbRepositoryStub : Your_IDbRepository
@@ -53,6 +53,11 @@ namespace CompanyName.ProjectName.ServiceName.Repository
         }
 
         public void Init(IDbConnection connection, string connectionString)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void get_person_name()
         {
             throw new NotImplementedException();
         }

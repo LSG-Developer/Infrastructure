@@ -21,7 +21,11 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
 
 
             Your_Service s = new Your_Service();
+
+
             var a = s.GetMessage(messageRequest);
+
+            s.TestContextRepository();
 
 
             Console.WriteLine("end of program!!");

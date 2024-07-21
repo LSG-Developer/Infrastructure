@@ -14,11 +14,12 @@
                type="LSG.EFRepository.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Infrastructure.Framework"></component>
     
     
+    
     <component id="myRepository"
-               service="CompanyName.ProjectName.ServiceName.Repository.Your_IDbRepository, CompanyName.ProjectName.ServiceName"
-               type="CompanyName.ProjectName.ServiceName.Repository.Your_DbRepository, CompanyName.ProjectName.ServiceName">
+               service="CompanyName.ProjectName.ServiceName.Repository.DbSql.Your_IDbRepository, CompanyName.ProjectName.ServiceName"
+               type="CompanyName.ProjectName.ServiceName.Repository.DbSql.Your_DbRepository, CompanyName.ProjectName.ServiceName">
       <parameters>
-        <connectionString>stringa di connessione</connectionString>
+        <connectionString>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</connectionString>
         <dbConnection>${dbConnection}</dbConnection>
       </parameters>
     </component>

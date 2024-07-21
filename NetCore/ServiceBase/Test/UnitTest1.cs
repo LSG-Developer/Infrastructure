@@ -1,8 +1,8 @@
 ﻿using System;
 using CompanyName.ProjectName.ServiceName.BackServices;
-using CompanyName.ProjectName.ServiceName.Repository;
 using System.Diagnostics.CodeAnalysis;
-using Moq; 
+using Moq;
+using CompanyName.ProjectName.ServiceName.Repository.DbSql;
 
 namespace CompanyName.ProjectName.ServiceName.Test
 {
