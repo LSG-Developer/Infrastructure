@@ -4,7 +4,7 @@ using CompanyName.ProjectName.ServiceName.Dto;
 
 namespace CompanyName.ProjectName.ServiceName.Contracts
 {
-    public interface IServiceContract
+    public interface IYour_ServiceContract
     {
         MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest);
         string GetMessage();

@@ -31,7 +31,6 @@ namespace CompanyName.ProjectName.ServiceName.CustomException
         {
             // Add implementation.
         }
-
         // This constructor is needed for serialization.
         protected ImportFileExcelException(SerializationInfo info, StreamingContext context)
         {

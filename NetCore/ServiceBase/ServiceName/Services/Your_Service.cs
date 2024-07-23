@@ -32,7 +32,9 @@ namespace CompanyName.ProjectName.Services
 
         public void TestContextRepository()
         {
-            IAppDbContextRepository context = CastleFactory<IAppDbContextRepository>("components.xml");
+            IAppDbContextRepository repository = CastleFactory<IAppDbContextRepository>("components.xml");
+            repository.AddPerson();
+            repository.Save();
         }
     }
 }

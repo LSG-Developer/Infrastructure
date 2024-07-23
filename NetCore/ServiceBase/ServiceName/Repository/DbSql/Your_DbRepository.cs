@@ -11,7 +11,6 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbSql
     public class Your_DbRepository : BaseDbRepository, Your_IDbRepository
     {
         public Your_DbRepository(IDbConnection conn, string connectionString) : base(conn, connectionString){
-           
         }
 
         public string GetMessage()

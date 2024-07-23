@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using CompanyName.ProjectName.ServiceName.Dto;
-using CompanyName.ProjectName.Services;
+﻿using CompanyName.ProjectName.ServiceName.Dto;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
+using CompanyName.ProjectName.Services;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 
 namespace CompanyName.ProjectName.ServiceName.Consumer
@@ -20,12 +18,12 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
             messageRequest.Entity.Name = "aaaa";
 
 
-            Your_Service s = new Your_Service();
+            Your_Service your_Service = new Your_Service();
 
 
-            var a = s.GetMessage(messageRequest);
+            //var a = your_Service.GetMessage(messageRequest);
 
-            s.TestContextRepository();
+            your_Service.TestContextRepository();
 
 
             Console.WriteLine("end of program!!");

@@ -3,7 +3,6 @@ using System.Reflection;
 
 namespace LSG.Infrastructure.Framework.BaseClasses.MessageTransfert
 {
-
         public enum AcknowledgeType
         {
             Failure = 0,

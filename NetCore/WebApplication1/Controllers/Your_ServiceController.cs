@@ -9,7 +9,7 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class YourServiceController : ControllerBase ,IServiceContract
+    public class Your_ServiceController : ControllerBase ,IYour_ServiceContract
     {
         [HttpPost("GetMessage")]
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)
@@ -31,6 +31,7 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
         public void TestContextRepository()
         {
             Your_Service yourService = new Your_Service();
+            yourService.TestContextRepository();
         }
 
         //private static readonly string[] Summaries = new[]

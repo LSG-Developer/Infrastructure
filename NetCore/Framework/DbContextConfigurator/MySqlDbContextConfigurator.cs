@@ -14,14 +14,14 @@ namespace LSG.EFRepository.DbContextConfigurator
         protected internal void Configuration(string fileTag)
         {
             var configBuilder = new ConfigurationBuilder()
+
                 .SetBasePath(Directory.GetCurrentDirectory())
+
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             var configuration = configBuilder.Build();
 
-            string? connectionString = configuration.GetConnectionString(fileTag)
-
-         ?? throw new InvalidOperationException("Connection string 'fileTag' not found.");
+            string connectionString = configuration.GetConnectionString(fileTag) ?? throw new InvalidOperationException("Connection string 'fileTag' not found.");
 
             _connectionString = connectionString;
         }

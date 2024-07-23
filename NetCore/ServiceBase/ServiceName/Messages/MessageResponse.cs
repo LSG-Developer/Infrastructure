@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using LSG.Infrastructure.Framework.BaseClasses.MessageTransfert;
 
-
 namespace CompanyName.ProjectName.ServiceName.MessageTransfert
-
 {
         public class MessageResponse<T> : MessageResponseBase
         {
