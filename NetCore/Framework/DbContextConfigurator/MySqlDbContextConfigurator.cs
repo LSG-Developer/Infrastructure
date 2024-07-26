@@ -6,7 +6,7 @@ namespace LSG.EFRepository.DbContextConfigurator
 {
     public class MySqlDbContextConfigurator : IDbContextConfigurator
     {
-        private string _connectionString;
+        private string? _connectionString;
 
         public MySqlDbContextConfigurator(){
         }

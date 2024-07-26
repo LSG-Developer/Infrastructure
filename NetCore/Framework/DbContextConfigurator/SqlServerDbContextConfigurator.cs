@@ -7,7 +7,7 @@ namespace LSG.EFRepository.DbContextConfigurator
 
     public class SqlServerDbContextConfigurator : IDbContextConfigurator
     {
-        private string _connectionString;
+        private string? _connectionString;
 
         public SqlServerDbContextConfigurator(){
 
