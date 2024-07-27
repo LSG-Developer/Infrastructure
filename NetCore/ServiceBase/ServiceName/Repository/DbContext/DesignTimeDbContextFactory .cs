@@ -17,9 +17,9 @@ public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbConte
         optionsBuilder.UseSqlServer();
 
         // Crea un'istanza di IDbContextConfigurator che è utilizzata dal tuo DbContext
-        var configurator = new SqlServerDbContextConfigurator();
+        var configurator = new SqlServerDbContextConfigurator("Server=PCASUSLUIGI\\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;");
 
         // Restituisci un'istanza del tuo DbContext con la configurazione di design-time
-        return new AppDbContextRepository(configurator, "SqlServer01Connection");
+        return new AppDbContextRepository(configurator);
     }
 }

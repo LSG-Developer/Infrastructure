@@ -8,7 +8,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
     {
         public DbSet<Person> Persons { get; set; }
 
-        public AppDbContextRepository(IDbContextConfigurator configurator, string fileTag) : base(configurator, fileTag)
+        public AppDbContextRepository(IDbContextConfigurator configurator) : base(configurator)
         {
 
         }

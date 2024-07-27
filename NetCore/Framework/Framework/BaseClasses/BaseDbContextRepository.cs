@@ -9,12 +9,9 @@ namespace LSG.EFRepository.Repository
     {
         private readonly IDbContextConfigurator _configurator;
 
-        private readonly string _fileTag;
-
-        protected BaseDbContextRepository(IDbContextConfigurator configurator, string fileTag)
+        protected BaseDbContextRepository(IDbContextConfigurator configurator)
         {
             _configurator = configurator;
-            _fileTag = fileTag;
         }
 
         public bool EnsureCreated()
@@ -42,7 +39,7 @@ namespace LSG.EFRepository.Repository
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            _configurator.ConnectionDbConfig(optionsBuilder, _fileTag);
+            _configurator.ConnectionDbConfig(optionsBuilder);
         }
     }
 }

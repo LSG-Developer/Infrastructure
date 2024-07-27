@@ -5,13 +5,18 @@
              service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
              type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
       <parameters>
-        <fileTag>SqlServer01Connection</fileTag>
         <contextConfigurator>${MyConfigurator}</contextConfigurator>
       </parameters>
     </component>
     <component id="MyConfigurator"
                service="LSG.Framework.DbContextConfigurator.IDbContextConfigurator,LSG.Infrastructure.Framework"
-               type="LSG.EFRepository.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Infrastructure.Framework"></component>
+               type="LSG.EFRepository.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Infrastructure.Framework">
+      <parameters>
+        <stringConnection>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</stringConnection>
+      </parameters>
+    </component>
+
+    
     
     
     
