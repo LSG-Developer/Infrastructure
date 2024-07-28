@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace LSG.Infrastructure.Framework.BaseClasses.MessageTransfert
+namespace LSG.Framework.Factory.Infrastructure.Framework.BaseClasses.MessageTransfert
 {
         public enum AcknowledgeType
         {

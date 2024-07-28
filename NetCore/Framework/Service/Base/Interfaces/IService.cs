@@ -1,8 +1,4 @@
-﻿
-
-using System;
-
-namespace LSG.Infrastructure.Framework.Interfaces
+﻿namespace LSG.Framework.Service.Base.Interfaces
 {
     public interface IService : IDisposable
     {

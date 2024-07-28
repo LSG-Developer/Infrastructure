@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using LSG.Framework.DbContextConfigurator;
-using LSG.EFRepository.Repository;
+﻿using LSG.Framework.EF.Base.Repository;
+using LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
 {

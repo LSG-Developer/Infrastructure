@@ -1,9 +1,8 @@
 ﻿
 using System.Data;
-using LSG.Infrastructure.Framework.Interfaces;
+using LSG.Framework.DbSql.Base.Repository.Interfaces;
 
-
-namespace LSG.Infrastructure.Framework.BaseClasses
+namespace LSG.Framework.DbSql.Base.Repository
 {
     public abstract class BaseDbRepository : IRepository
     {

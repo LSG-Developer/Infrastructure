@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 using CompanyName.ProjectName.ServiceName.Repository.DbSql;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Service.Base;
 
 
 namespace CompanyName.ProjectName.ServiceName.BackServices

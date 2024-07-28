@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace LSG.Infrastructure.Framework.BaseClasses
+namespace LSG.Framework.Factory.Infrastructure.Framework.BaseClasses
 {
     public abstract class DtoBase //: INotifyPropertyChanged
     {

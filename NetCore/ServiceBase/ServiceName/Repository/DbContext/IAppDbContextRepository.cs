@@ -1,5 +1,5 @@
 ﻿
-using LSG.Infrastructure.Framework.Interfaces;
+using LSG.Framework.EF.Base.Repository.Interfaces;
 
 namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
 {

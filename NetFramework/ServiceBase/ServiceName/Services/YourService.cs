@@ -6,7 +6,7 @@ using CompanyName.ProjectName.ServiceName.BackServices;
 using CompanyName.ProjectName.ServiceName.Contracts;
 using CompanyName.ProjectName.ServiceName.Dto;
 using CompanyName.ProjectName.ServiceName.Repository;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Factory.Infrastructure.Framework.BaseClasses;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using System.Diagnostics.CodeAnalysis;
  

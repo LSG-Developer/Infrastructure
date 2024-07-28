@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CompanyName.ProjectName.ServiceName.Repository;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Factory.Infrastructure.Framework.BaseClasses;
 
 
 namespace CompanyName.ProjectName.ServiceName.BackServices

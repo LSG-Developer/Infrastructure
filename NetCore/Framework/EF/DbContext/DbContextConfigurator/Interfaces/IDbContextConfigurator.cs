@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace LSG.Framework.DbContextConfigurator
+namespace LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces
 {
     public interface IDbContextConfigurator
     {

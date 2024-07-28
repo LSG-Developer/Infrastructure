@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using LSG.Framework.DbContextConfigurator;
 using CompanyName.ProjectName.ServiceName.Repository.DbContext;
-using System;
-using LSG.EFRepository.DbContextConfigurator;
+using LSG.Framework.EF.DbContext.DbContextConfigurator;
+
 
 public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContextRepository>
 {

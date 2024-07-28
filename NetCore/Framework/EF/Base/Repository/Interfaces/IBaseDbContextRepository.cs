@@ -1,6 +1,4 @@
-﻿
-
-namespace LSG.Infrastructure.Framework.Interfaces
+﻿namespace LSG.Framework.EF.Base.Repository.Interfaces
 {
     public interface IBaseDbContextRepository
     {

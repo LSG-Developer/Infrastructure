@@ -1,15 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using LSG.Framework.DbContextConfigurator;
+﻿using LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace LSG.EFRepository.DbContextConfigurator
+namespace LSG.Framework.EF.DbContext.DbContextConfigurator
 {
 
     public class SqlServerDbContextConfigurator : IDbContextConfigurator
     {
         private string _connectionString;
 
-        public SqlServerDbContextConfigurator(string stringConnection){
+        public SqlServerDbContextConfigurator(string stringConnection)
+        {
             _connectionString = stringConnection;
         }
 

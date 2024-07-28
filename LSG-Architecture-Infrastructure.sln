@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{0A9A9E55-F622-4FCC-847A-2547BFAAEB50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSG.Infrastructure.Framework", "NetCore\Framework\LSG.Infrastructure.Framework.csproj", "{77EB70C6-ED9E-4464-877A-5ECC23506CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSG.Framework", "NetCore\Framework\LSG.Framework.csproj", "{77EB70C6-ED9E-4464-877A-5ECC23506CA1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSG.Infrastructure.Framework.Consumer", "NetCore\Framework\Consumer\LSG.Infrastructure.Framework.Consumer.csproj", "{1242D6A8-F49D-4AAB-9C30-794AF6F9BBC6}"
 EndProject

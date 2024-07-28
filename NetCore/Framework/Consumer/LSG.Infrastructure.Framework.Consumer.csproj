@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LSG.Infrastructure.Framework.csproj" />
+    <ProjectReference Include="..\LSG.Framework.csproj" />
   </ItemGroup>
 
 </Project>

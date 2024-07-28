@@ -1,9 +1,8 @@
-﻿
-using LSG.Infrastructure.Framework.Factory;
+﻿using LSG.Framework.Factory.CastleWindsor;
 
-namespace LSG.Infrastructure.Framework.BaseClasses
+namespace LSG.Framework.Service.Base
 {
-    public abstract class ServiceBase 
+    public abstract class ServiceBase
     {
         public static T CastleFactory<T>(string xml_castle_file_name)
         {

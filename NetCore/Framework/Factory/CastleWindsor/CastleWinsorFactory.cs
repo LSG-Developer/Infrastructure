@@ -1,12 +1,8 @@
 ﻿using Castle.Windsor.Configuration.Interpreters;
-using Castle.MicroKernel.Registration;
 using Castle.Windsor;
-using System.IO;
-using System.Data;
-
-namespace LSG.Infrastructure.Framework.Factory
+namespace LSG.Framework.Factory.CastleWindsor
 {
-    internal class CastleWinsorFactory<T> 
+    internal class CastleWinsorFactory<T>
     {
         public static T Create(string castle_file_name)
         {
@@ -18,7 +14,7 @@ namespace LSG.Infrastructure.Framework.Factory
 
                 return container.Resolve<T>();
             }
-            catch 
+            catch
             {
                 throw;
             }

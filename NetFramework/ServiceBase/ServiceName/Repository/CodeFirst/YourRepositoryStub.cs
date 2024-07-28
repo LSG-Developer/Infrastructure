@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Factory.Infrastructure.Framework.BaseClasses;
 using System.Diagnostics.CodeAnalysis;
 
 namespace CompanyName.ProjectName.ServiceName.Repository

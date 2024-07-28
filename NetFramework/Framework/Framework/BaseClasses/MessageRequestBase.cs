@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace LSG.Infrastructure.Framework.BaseClasses.MessageTransfert
+namespace LSG.Framework.Factory.Infrastructure.Framework.BaseClasses.MessageTransfert
 {
         /// <summary>
         /// Classe base pe tutte le request ai web service di Vittoria Assicurazioni.

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace LSG.Infrastructure.Framework.Interfaces
+namespace LSG.Framework.Factory.Infrastructure.Framework.Interfaces
 {
     public interface IService : IDisposable
     {

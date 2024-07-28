@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Framework\LSG.Infrastructure.Framework.csproj" />
+    <ProjectReference Include="..\Framework\LSG.Framework.csproj" />
     <ProjectReference Include="..\ServiceBase\ServiceName\CompanyName.ProjectName.ServiceName.csproj" />
   </ItemGroup>
 

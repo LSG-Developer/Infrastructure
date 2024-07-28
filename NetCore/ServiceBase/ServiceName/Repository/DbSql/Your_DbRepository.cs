@@ -1,9 +1,8 @@
-﻿using Azure;
-using LSG.Infrastructure.Framework.BaseClasses;
+﻿
+using LSG.Framework.DbSql.Base.Repository;
 using System.Data;
-using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 
 namespace CompanyName.ProjectName.ServiceName.Repository.DbSql
 {

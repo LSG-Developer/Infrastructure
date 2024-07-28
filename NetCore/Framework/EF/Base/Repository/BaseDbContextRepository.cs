@@ -1,11 +1,11 @@
 ﻿
-using LSG.Infrastructure.Framework.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using LSG.Framework.DbContextConfigurator;
+using LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces;
+using LSG.Framework.EF.Base.Repository.Interfaces;
 
-namespace LSG.EFRepository.Repository
+namespace LSG.Framework.EF.Base.Repository
 {
-    public abstract class BaseDbContextRepository : DbContext, IBaseDbContextRepository
+    public abstract class BaseDbContextRepository : Microsoft.EntityFrameworkCore.DbContext, IBaseDbContextRepository
     {
         private readonly IDbContextConfigurator _configurator;
 
@@ -23,7 +23,6 @@ namespace LSG.EFRepository.Repository
         {
             try
             {
-                // Prova a connettersi al database
                 return Database.CanConnect();
             }
             catch

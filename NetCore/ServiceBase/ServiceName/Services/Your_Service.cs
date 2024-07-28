@@ -1,6 +1,6 @@
 ﻿using CompanyName.ProjectName.ServiceName.BackServices;
 using CompanyName.ProjectName.ServiceName.Dto;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Service.Base;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using System.Diagnostics.CodeAnalysis;
 using CompanyName.ProjectName.ServiceName.Repository.DbSql;

@@ -9,8 +9,8 @@
       </parameters>
     </component>
     <component id="MyConfigurator"
-               service="LSG.Framework.DbContextConfigurator.IDbContextConfigurator,LSG.Infrastructure.Framework"
-               type="LSG.EFRepository.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Infrastructure.Framework">
+               service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
+               type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
       <parameters>
         <stringConnection>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</stringConnection>
       </parameters>

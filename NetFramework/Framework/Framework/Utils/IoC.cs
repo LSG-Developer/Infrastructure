@@ -5,7 +5,7 @@ using System;
 
 
 
-namespace LSG.Infrastructure.Framework.Utils
+namespace LSG.Framework.Factory.Infrastructure.Framework.Utils
 {
         internal static class IoC
         {

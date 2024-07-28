@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using LSG.Infrastructure.Framework.BaseClasses;
+using LSG.Framework.Factory.Infrastructure.Framework.BaseClasses;
 
-namespace LSG.Infrastructure.Framework.Consumer
+namespace LSG.Framework.Factory.Infrastructure.Framework.Consumer
 {
     internal class Program
     {

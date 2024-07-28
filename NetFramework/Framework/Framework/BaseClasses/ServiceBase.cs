@@ -1,8 +1,8 @@
 ﻿
-using LSG.Infrastructure.Framework.Factory;
+using LSG.Framework.Factory.Infrastructure.Framework.Factory;
 
 
-namespace LSG.Infrastructure.Framework.BaseClasses
+namespace LSG.Framework.Factory.Infrastructure.Framework.BaseClasses
 {
     public abstract class ServiceBase 
     {

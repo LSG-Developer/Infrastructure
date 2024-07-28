@@ -2,7 +2,7 @@
 using Castle.Windsor;
 using System.IO;
 
-namespace LSG.Infrastructure.Framework.Factory
+namespace LSG.Framework.Factory.Infrastructure.Framework.Factory
 {
     internal class CastleWinsorFactory<T> 
     {      

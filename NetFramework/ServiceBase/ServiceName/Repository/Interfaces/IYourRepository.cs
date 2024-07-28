@@ -1,5 +1,5 @@
 ﻿
-using LSG.Infrastructure.Framework.Interfaces;
+using LSG.Framework.Factory.Infrastructure.Framework.Interfaces;
 
 namespace CompanyName.ProjectName.ServiceName.Repository
 {

@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-using LSG.Infrastructure.Framework.BaseClasses.MessageTransfert;
+using LSG.Framework.Factory.Infrastructure.Framework.BaseClasses.MessageTransfert;
 
 
 namespace CompanyName.ProjectName.ServiceName.MessageTransfert
