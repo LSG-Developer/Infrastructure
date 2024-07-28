@@ -8,28 +8,13 @@ namespace LSG.EFRepository.DbContextConfigurator
     {
         private string? _connectionString;
 
-        public MySqlDbContextConfigurator(){
+        public MySqlDbContextConfigurator(string stringConnection)
+        {
+            _connectionString = stringConnection;
         }
 
-        protected internal void Configuration(string fileTag)
+        public void ConnectionDbConfig(DbContextOptionsBuilder optionsBuilder)
         {
-            var configBuilder = new ConfigurationBuilder()
-
-                .SetBasePath(Directory.GetCurrentDirectory())
-
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-            var configuration = configBuilder.Build();
-
-            string connectionString = configuration.GetConnectionString(fileTag) ?? throw new InvalidOperationException("Connection string 'fileTag' not found.");
-
-            _connectionString = connectionString;
-        }
-
-        public void ConnectionDbConfig(DbContextOptionsBuilder optionsBuilder, string dbConnectionTag)
-        {
-            Configuration(dbConnectionTag);
-
             optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         }
     }

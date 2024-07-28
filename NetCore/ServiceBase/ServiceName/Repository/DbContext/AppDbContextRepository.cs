@@ -15,7 +15,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
 
         public void AddPerson()
         {
-            Persons.Add(new Person { Name = "John Doe", Surname = "Santagada", Age = 30});
+            Persons.Add(new Person { Name = "John Doe", Surname = "Santagada", Age = 30,Address= "via del capo"});
         }
 
 
