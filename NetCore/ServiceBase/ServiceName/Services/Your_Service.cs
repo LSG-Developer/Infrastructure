@@ -17,10 +17,15 @@ namespace CompanyName.ProjectName.Services
             using (Your_IDbRepository repository = CastleFactory<Your_IDbRepository>("components.xml"))
             {
                 repository.get_person_name();
+
                 string message = BackServiceName.MethodName(repository);
-                MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>();   
+
+                MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>(); 
+                
                 messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 
+
                 messageResponse.Message = message; 
+
                 return messageResponse;   
             }
         }

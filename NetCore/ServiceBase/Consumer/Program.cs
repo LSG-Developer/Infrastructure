@@ -13,20 +13,21 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
         static void Main(string[] args)
         {
             MessageRequest<YourDto> messageRequest = new MessageRequest<YourDto>();
+
             messageRequest.Entity = new YourDto() { Name = "Nome", SurName="Santagada" };
+
             messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
+
             messageRequest.Entity.Name = "aaaa";
 
-
             Your_Service your_Service = new Your_Service();
-
 
             //var a = your_Service.GetMessage(messageRequest);
 
             your_Service.TestContextRepository();
 
-
             Console.WriteLine("end of program!!");
+
             Console.ReadLine();
         }
 
