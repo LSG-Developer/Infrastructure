@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using LSG.Framework.DataTransfertObjects;
+using LSG.Framework.DataTransfertObjects.Base;
 
 namespace CompanyName.ProjectName.ServiceName.MessageTransfert
 {

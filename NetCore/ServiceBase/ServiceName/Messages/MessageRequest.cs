@@ -1,6 +1,6 @@
 ﻿
 using System.Collections.Generic;
-using LSG.Framework.DataTransfertObjects;
+using LSG.Framework.DataTransfertObjects.Base;
 
 
 namespace CompanyName.ProjectName.ServiceName.MessageTransfert
