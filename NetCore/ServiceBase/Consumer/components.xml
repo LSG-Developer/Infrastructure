@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <components>
-    <component id="MyContextRepository"
-             service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
-             type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
+
+    <!-- ENTITY FRAMEWORK CONTEXT SECTION -->
+
+    <component id="MySqlContextConfigurator"
+             service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
+             type="LSG.Framework.EF.DbContext.DbContextConfigurator.MySqlDbContextConfigurator,LSG.Framework">
       <parameters>
-        <contextConfigurator>${MyConfigurator}</contextConfigurator>
+        <stringConnection>Server=192.168.43.117;database=db_test10;uid=admin;password=Neuroma9000!</stringConnection>
       </parameters>
     </component>
-    <component id="MyConfigurator"
-               service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
-               type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
+
+    <component id="SqlContextConfigurator"
+              service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
+              type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
       <parameters>
         <stringConnection>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</stringConnection>
       </parameters>
     </component>
+    
+    <component id="MyContextRepository"
+             service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
+             type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
+      <parameters>
+        <configurator>${MySqlContextConfigurator}</configurator>
+      </parameters>
+    </component>
+    
 
-    
-    
-    
+ <!-- SQL CONNECTION SECTION -->
     
     <component id="myRepository"
                service="CompanyName.ProjectName.ServiceName.Repository.DbSql.Your_IDbRepository, CompanyName.ProjectName.ServiceName"

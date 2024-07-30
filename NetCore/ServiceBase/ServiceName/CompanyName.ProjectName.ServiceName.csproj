@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repository\DbContext\DesignTimeDbContextFactory .cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Framework\LSG.Framework.csproj" />
   </ItemGroup>
 

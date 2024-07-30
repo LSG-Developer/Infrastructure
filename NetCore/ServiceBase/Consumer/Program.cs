@@ -18,7 +18,7 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
 
             messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
 
-            messageRequest.Entity.Name = "aaaa";
+            messageRequest.Entity.Name = "Luigi";
 
             Your_Service your_Service = new Your_Service();
 

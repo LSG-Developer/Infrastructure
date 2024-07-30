@@ -38,6 +38,7 @@ namespace CompanyName.ProjectName.Services
         public void TestContextRepository()
         {
             IAppDbContextRepository repository = CastleFactory<IAppDbContextRepository>("components.xml");
+            repository.EnsureCreated();
             repository.AddPerson();
             repository.Save();
         }
