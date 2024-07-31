@@ -12,23 +12,29 @@ namespace CompanyName.ProjectName.ServiceName.Consumer
     {
         static void Main(string[] args)
         {
-            MessageRequest<YourDto> messageRequest = new MessageRequest<YourDto>();
 
-            messageRequest.Entity = new YourDto() { Name = "Nome", SurName="Santagada" };
+            while (true)
+            {
+                MessageRequest<YourDto> messageRequest = new MessageRequest<YourDto>();
 
-            messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
+                messageRequest.Entity = new YourDto() { Name = "Nome", SurName = "Santagada" };
 
-            messageRequest.Entity.Name = "Luigi";
+                messageRequest.Entity.PropertyChanged += Dto_PropertyChanged;
 
-            Your_Service your_Service = new Your_Service();
+                messageRequest.Entity.Name = "Luigi";
 
-            //var a = your_Service.GetMessage(messageRequest);
+                Your_Service your_Service = new Your_Service();
 
-            your_Service.TestContextRepository();
+                //var a = your_Service.GetMessage(messageRequest);
 
-            Console.WriteLine("end of program!!");
+                your_Service.TestContextRepository();
 
-            Console.ReadLine();
+                Console.WriteLine("end of program!!");
+
+                Console.ReadLine();
+            }
+
+
         }
 
         private static void Dto_PropertyChanged(object sender, PropertyChangedEventArgs e)
