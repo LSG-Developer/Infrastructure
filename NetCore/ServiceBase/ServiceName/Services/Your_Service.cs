@@ -5,6 +5,7 @@ using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using System.Diagnostics.CodeAnalysis;
 using CompanyName.ProjectName.ServiceName.Repository.DbSql;
 using CompanyName.ProjectName.ServiceName.Repository.DbContext;
+using LSG.Framework.Logging;
 
 
 namespace CompanyName.ProjectName.Services
@@ -37,7 +38,12 @@ namespace CompanyName.ProjectName.Services
 
         public void TestContextRepository()
         {
+           
             IAppDbContextRepository repository = CastleFactory<IAppDbContextRepository>("components.xml");
+            ILogger logger = CastleFactory<ILogger>("components.xml");
+
+            logger.Debug("eccoci");
+
             repository.EnsureCreated();
             repository.AddPerson();
             repository.Save();

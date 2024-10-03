@@ -1,0 +1,12 @@
+﻿<component id="Log4NetRollingFileAppender"
+          service="log4net.Appender.RollingFileAppender, log4net"
+          type="log4net.Appender.RollingFileAppender, log4net">
+  <parameters>
+    <string name="File">C:\\Logs\\app.log</string>
+    <string name="AppendToFile">true</string>
+    <string name="RollingStyle">Size</string>
+    <int name="MaxSizeRollBackups">10</int>
+    <string name="MaximumFileSize">1MB</string>
+    <string name="Layout">log4net.Layout.PatternLayout, log4net</string>
+  </parameters>
+</component>

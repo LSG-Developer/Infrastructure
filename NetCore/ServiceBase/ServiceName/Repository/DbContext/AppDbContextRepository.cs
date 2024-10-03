@@ -20,6 +20,16 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
         }
 
 
+        public void DeletePerson(int id)
+        {
+            var personToRemove = Persons.FirstOrDefault(p => p.Id == id);
+            if (personToRemove != null)
+            {
+                Persons.Remove(personToRemove);
+            }    
+        }
+
+
         public ICollection<Person> GetPersons()
         {
             return Persons.ToList();

@@ -1,30 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <components>
+
+    <!-- ENTITY FRAMEWORK CONTEXT SECTION -->
+
+    <component id="MySqlContextConfigurator"
+             service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
+             type="LSG.Framework.EF.DbContext.DbContextConfigurator.MySqlDbContextConfigurator,LSG.Framework">
+      <parameters>
+        <stringConnection>Server=192.168.43.117;database=db_test10;uid=admin;password=Neuroma9000!</stringConnection>
+      </parameters>
+    </component>
+
+    <component id="SqlContextConfigurator"
+              service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
+              type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
+      <parameters>
+        <stringConnection>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</stringConnection>
+      </parameters>
+    </component>
+
     <component id="MyContextRepository"
              service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
              type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
       <parameters>
-        <fileTag>SqlServer01Connection</fileTag>
-        <contextConfigurator>${MyConfigurator}</contextConfigurator>
+        <configurator>${SqlContextConfigurator}</configurator>
       </parameters>
     </component>
-    <component id="MyConfigurator"
-               service="LSG.Framework.DbContextConfigurator.IDbContextConfigurator,LSG.Infrastructure.Framework"
-               type="LSG.EFRepository.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Infrastructure.Framework"></component>
-    
-    
+
+
+    <!-- SQL CONNECTION SECTION -->
+
     <component id="myRepository"
                service="CompanyName.ProjectName.ServiceName.Repository.DbSql.Your_IDbRepository, CompanyName.ProjectName.ServiceName"
                type="CompanyName.ProjectName.ServiceName.Repository.DbSql.Your_DbRepository, CompanyName.ProjectName.ServiceName">
       <parameters>
-        <connectionString>stringa di connessione</connectionString>
+        <connectionString>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</connectionString>
         <dbConnection>${dbConnection}</dbConnection>
       </parameters>
     </component>
+
 
     <component id="dbConnection"
                service="System.Data.IDbConnection, System.Data"
                type="System.Data.SqlClient.SqlConnection, System.Data" />
   </components>
+
+
+  <!-- LOGGER SECTION -->
+
+  <component id="Logger"
+              service="LSG.Framework.Logging.ILogger,LSG.Framework"
+              type="CompanyName.ProjectName.ServiceName.Repository.Loggers.Log4Net,LSG.Framework">
+    <parameters>
+      <configFileName>log4net.xml</configFileName>
+    </parameters>
+  </component>
+  
+  
 </configuration>
+
