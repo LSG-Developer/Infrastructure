@@ -12,7 +12,7 @@ namespace LSG.Framework.EF.DbContext.DbContextConfigurator
             _connectionString = stringConnection;
         }
 
-        public void ConnectionDbConfig(DbContextOptionsBuilder optionsBuilder)
+        void IDbContextConfigurator.ConnectionDbConfig(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         }

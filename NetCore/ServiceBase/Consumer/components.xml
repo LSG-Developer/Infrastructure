@@ -2,29 +2,38 @@
 <configuration>
   <components>
 
-    <!-- ENTITY FRAMEWORK CONTEXT SECTION -->
-
-    <component id="MySqlContextConfigurator"
+<!-- ENTITY FRAMEWORK CONTEXT SECTION -->
+    
+    <!-- MySql SECTION -->
+    
+    <component id="MySql_Context_Configuration"
              service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
              type="LSG.Framework.EF.DbContext.DbContextConfigurator.MySqlDbContextConfigurator,LSG.Framework">
       <parameters>
         <stringConnection>Server=192.168.43.117;database=db_test10;uid=admin;password=Neuroma9000!</stringConnection>
       </parameters>
     </component>
+    
+    <!-- MySql SECTION END -->
+    
 
-    <component id="SqlContextConfigurator"
+    <!-- Sql SECTION -->
+    
+    <component id="Sql_Context_Configuration"
               service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
               type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
       <parameters>
         <stringConnection>Server=PCASUSLUIGI\PCASUSSQLSERVER;Database=myDataBase2;User Id=sa;Password=neuroma9000;TrustServerCertificate=true;</stringConnection>
       </parameters>
     </component>
+
+    <!-- Sql SECTION END-->
     
-    <component id="MyContextRepository"
+    <component id="My_Context_Repository"
              service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
              type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
       <parameters>
-        <configurator>${SqlContextConfigurator}</configurator>
+        <configurator>${Sql_Context_Configuration}</configurator>
       </parameters>
     </component>
     

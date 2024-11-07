@@ -40,12 +40,15 @@ namespace CompanyName.ProjectName.Services
         {
            
             IAppDbContextRepository repository = CastleFactory<IAppDbContextRepository>("components.xml");
+
             ILogger logger = CastleFactory<ILogger>("components.xml");
 
             logger.Debug("eccoci");
 
             repository.EnsureCreated();
+
             repository.AddPerson();
+
             repository.Save();
         }
     }

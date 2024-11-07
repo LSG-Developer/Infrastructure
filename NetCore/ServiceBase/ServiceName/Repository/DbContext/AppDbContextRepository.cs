@@ -11,12 +11,12 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
 
         public AppDbContextRepository(IDbContextConfigurator configurator) : base(configurator)
         {
-
+          
         }
 
         public void AddPerson()
         {
-            Persons.Add(new Person { Name = "John Doe", Surname = "Santagada", Age = 30,Address= "via del capo"});
+            Persons.Add(new Person { Name = "John Doe", Surname = "Santagada", Age = 30,Address= "via del capo",PersonId=1});
         }
 
 
@@ -45,6 +45,10 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
                 entity.Property(e => e.Surname)
                     .IsRequired()  // Ad esempio, se vuoi rendere la proprietà obbligatoria
                     .HasMaxLength(100); // e limitare la lunghezza massima a 100 caratteri
+
+                entity.Property(e => e.PersonId)
+                    .IsRequired();  // Ad esempio, se vuoi rendere la proprietà obbligatoria
+
             });
         }
     }
