@@ -23,7 +23,7 @@ namespace CompanyName.ProjectName.Services
 
                 MessageResponse<YourDto> messageResponse = new MessageResponse<YourDto>(); 
                 
-                messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada" }; 
+                messageResponse.Entity = new YourDto() {Name="Luigi",SurName="Santagada"}; 
 
                 messageResponse.Message = message; 
 

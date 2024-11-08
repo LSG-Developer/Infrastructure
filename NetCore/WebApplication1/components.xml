@@ -4,7 +4,9 @@
 
     <!-- ENTITY FRAMEWORK CONTEXT SECTION -->
 
-    <component id="MySqlContextConfigurator"
+    <!-- MySql SECTION -->
+
+    <component id="MySql_Context_Configuration"
              service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
              type="LSG.Framework.EF.DbContext.DbContextConfigurator.MySqlDbContextConfigurator,LSG.Framework">
       <parameters>
@@ -12,7 +14,12 @@
       </parameters>
     </component>
 
-    <component id="SqlContextConfigurator"
+    <!-- MySql SECTION END -->
+
+
+    <!-- Sql SECTION -->
+
+    <component id="Sql_Context_Configuration"
               service="LSG.Framework.EF.DbContext.DbContextConfigurator.Interfaces.IDbContextConfigurator,LSG.Framework"
               type="LSG.Framework.EF.DbContext.DbContextConfigurator.SqlServerDbContextConfigurator,LSG.Framework">
       <parameters>
@@ -20,11 +27,13 @@
       </parameters>
     </component>
 
-    <component id="MyContextRepository"
+    <!-- Sql SECTION END-->
+
+    <component id="My_Context_Repository"
              service="CompanyName.ProjectName.ServiceName.Repository.DbContext.IAppDbContextRepository,CompanyName.ProjectName.ServiceName"
              type="CompanyName.ProjectName.ServiceName.Repository.DbContext.AppDbContextRepository,CompanyName.ProjectName.ServiceName">
       <parameters>
-        <configurator>${SqlContextConfigurator}</configurator>
+        <configurator>${Sql_Context_Configuration}</configurator>
       </parameters>
     </component>
 
@@ -40,23 +49,19 @@
       </parameters>
     </component>
 
-
     <component id="dbConnection"
                service="System.Data.IDbConnection, System.Data"
                type="System.Data.SqlClient.SqlConnection, System.Data" />
+
+    <!-- LOGGER SECTION -->
+
+    <component id="MyLogger"
+      service="LSG.Framework.Logging.ILogger,LSG.Framework"
+      type="CompanyName.ProjectName.ServiceName.Repository.Loggers.Log4Net,CompanyName.ProjectName.ServiceName">
+      <parameters>
+        <configFileName>log4net.xml</configFileName>
+      </parameters>
+    </component>
   </components>
-
-
-  <!-- LOGGER SECTION -->
-
-  <component id="Logger"
-              service="LSG.Framework.Logging.ILogger,LSG.Framework"
-              type="CompanyName.ProjectName.ServiceName.Repository.Loggers.Log4Net,LSG.Framework">
-    <parameters>
-      <configFileName>log4net.xml</configFileName>
-    </parameters>
-  </component>
-  
-  
 </configuration>
 

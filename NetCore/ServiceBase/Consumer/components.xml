@@ -62,10 +62,5 @@
       <configFileName>log4net.xml</configFileName>
     </parameters>
   </component>
-  
-    
   </components>
-
- 
-  
 </configuration>

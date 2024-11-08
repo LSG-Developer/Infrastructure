@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-
-using CompanyName.ProjectName.ServiceName.Contracts;
 using CompanyName.ProjectName.ServiceName.MessageTransfert;
 using CompanyName.ProjectName.ServiceName.Dto;
 using CompanyName.ProjectName.Services;
@@ -9,7 +7,7 @@ namespace CompanyName.ProjectName.ServiceName.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class Your_ServiceController : ControllerBase ,IYour_ServiceContract
+    public class Your_ServiceController : ControllerBase 
     {
         [HttpPost("GetMessage")]
         public MessageResponse<YourDto> GetMessage(MessageRequest<YourDto> messageRequest)
