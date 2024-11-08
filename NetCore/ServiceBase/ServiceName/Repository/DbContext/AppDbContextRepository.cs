@@ -9,20 +9,17 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
     {
         public DbSet<Person> Persons { get; set; }
 
-        public AppDbContextRepository(IDbContextConfigurator configurator) : base(configurator)
-        {
-          
+        public AppDbContextRepository(IDbContextConfigurator configurator) : base(configurator){
         }
 
-        public void AddPerson()
-        {
+        void IAppDbContextRepository.AddPerson(){
             Persons.Add(new Person { Name = "John Doe", Surname = "Santagada", Age = 30,Address= "via del capo",PersonId=1});
         }
 
+        void IAppDbContextRepository.DeletePerson(Int16 id){
 
-        public void DeletePerson(int id)
-        {
-            var personToRemove = Persons.FirstOrDefault(p => p.Id == id);
+            var personToRemove = Persons.FirstOrDefault(p => p.PersonId == id);
+
             if (personToRemove != null)
             {
                 Persons.Remove(personToRemove);
@@ -30,7 +27,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
         }
 
 
-        public ICollection<Person> GetPersons()
+        ICollection<Person> IAppDbContextRepository.GetPersons()
         {
             return Persons.ToList();
         }

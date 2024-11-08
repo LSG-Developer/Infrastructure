@@ -9,5 +9,7 @@ namespace CompanyName.ProjectName.ServiceName.Repository.DbContext
 
         public ICollection<Person> GetPersons();
 
+        public void DeletePerson(Int16 id);
+
     }
 }
